@@ -1,0 +1,13 @@
+// Q135: Assign explicit values starting from 10 to an enum and print them.
+#include <stdio.h>
+
+enum Level { LOW = 10, MEDIUM, HIGH, CRITICAL, EXTREME };
+
+int main() {
+    printf("LOW      = %d\n", LOW);
+    printf("MEDIUM   = %d\n", MEDIUM);
+    printf("HIGH     = %d\n", HIGH);
+    printf("CRITICAL = %d\n", CRITICAL);
+    printf("EXTREME  = %d\n", EXTREME);
+    return 0;
+}

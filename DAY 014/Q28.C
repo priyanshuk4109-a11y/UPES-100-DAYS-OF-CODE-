@@ -1,0 +1,23 @@
+// Q28: Print the product of even numbers from 1 to n.
+// Note: the product grows very fast; n up to about 40 fits in unsigned long long.
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    unsigned long long product = 1;
+
+    printf("Enter n: ");
+    scanf("%d", &n);
+
+    if (n < 2) {
+        printf("There are no even numbers between 1 and %d\n", n);
+        return 0;
+    }
+
+    for (i = 2; i <= n; i += 2) {
+        product *= i;
+    }
+
+    printf("Product of even numbers from 1 to %d = %llu\n", n, product);
+    return 0;
+}
